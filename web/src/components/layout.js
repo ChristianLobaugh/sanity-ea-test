@@ -41,7 +41,7 @@ class Layout extends React.Component {
     const { scrolled } = this.state;
     return (
       <>
-        <Header
+        {/* <Header
           navMenuItems={navMenuItems}
           siteTitle={siteTitle}
           onHideNav={onHideNav}
@@ -49,9 +49,9 @@ class Layout extends React.Component {
           showNav={showNav}
           scrolled={scrolled}
           textWhite={textWhite}
-        />
+        /> */}
         <>{children}</>
-        <Footer siteTitle={siteTitle} />
+        {/* <Footer siteTitle={siteTitle} /> */}
       </>
     );
   }

@@ -1,5 +1,7 @@
 export { default as hero } from './hero'
+export { default as heroSingleColumn } from './heroSingleColumn.js'
 export { default as infoRows } from './infoRows'
+export { default as singleColumnRows } from './singleColumnRows'
 export { default as textWithIllustration } from './textWithIllustration'
 export { default as illustration } from './illustration'
 export { default as ctaColumns } from './ctaColumns'

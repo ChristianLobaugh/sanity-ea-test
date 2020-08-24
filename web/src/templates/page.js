@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { graphql } from "gatsby";
 
 import Hero from "../components/hero";
+import HeroSingleColumn from "../components/heroSingleColumn";
+import SingleColumnRows from "../components/singleColumnRows";
+
 import InfoRows from "../components/InfoRows";
 import CTAColumns from "../components/cta-columns";
 import CTA from "../components/cta";
@@ -74,8 +77,14 @@ const Page = (props) => {
         case "infoRows":
           el = <InfoRows key={c._key} {...c} />;
           break;
+        case "singleColumnRows":
+          el = <SingleColumnRows key={c._key} {...c} />;
+          break;
         case "hero":
           el = <Hero key={c._key} {...c} />;
+          break;
+        case "heroSingleColumn":
+          el = <HeroSingleColumn key={c._key} {...c} />;
           break;
         case "ctaColumns":
           el = <CTAColumns key={c._key} {...c} />;
