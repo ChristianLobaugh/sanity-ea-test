@@ -9,7 +9,7 @@ export default {
     },
     {
       type: 'array',
-      name: 'rows',
+      name: 'centeredRows',
       of: [{ type: 'textWithIllustration' }]
     }
   ]

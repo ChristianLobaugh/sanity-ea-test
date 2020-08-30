@@ -74,7 +74,7 @@ const SingleColumnRow = props => {
 // };
 
 const SingleColumnRows = props => {
-  const contentRows = (props.rows || [])
+  const contentRows = (props.centeredRows || [])
     // .filter(r => !r.disabled)
     .map((r, i) => {
       return <SingleColumnRow key={r._key} {...r} />;
